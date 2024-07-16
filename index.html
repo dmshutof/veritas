@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <div class="mobile_menu">
+  <nav>
+    <ul class="d-flex align-items-center">
+      <li class="mr-12"><a href="/services.html">Услуги</a></li>
+      <li class="mr-12"><a href="/blog.html">Блог</a></li>
+      <li class="mr-12"><a href="#">Цены</a></li>
+      <li class="mr-12"><a href="/license.html">Лицензия</a></li>
+      <li><a href="/contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="header_contacts d-flex align-items-center flex-direction-column">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="tel:+79503518686" class="fs-18px mulish-700 mr-5 d-flex">+7 950 351 86 86</a>
+      <div class="d-flex align-items-center">
+        <a href="#" class="mr-2">
+          <img src="img/vb.svg" alt="">
+        </a>
+        <a href="#" class="mr-2">
+          <img src="img/tg.svg" alt="">
+        </a>
+        <a href="#" class="mr-2">
+          <img src="img/wa.svg" alt="">
+        </a>
+      </div>
+    </div>
+    <button class="main_button second mr-14 open_modal" data-modal="contacts" >Заказать звонок</button>
+  </div>
+</div>
+
+
+    <div class="header_row d-flex align-items-center justify-content-between">
+      <svg width="40" height="40" viewBox="0 0 100 100" class="hamburger"
+           onclick="document.querySelector('body').classList.toggle('menu_open');">
+        <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+        <path class="line line2" d="M 20,50 H 80"/>
+        <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+      </svg>
+      <nav>
+        <ul class="d-flex align-items-center">
+          <li class="mr-12"><a href="/services.html">Услуги</a></li>
+          <li class="mr-12"><a href="/blog.html">Блог</a></li>
+          <li class="mr-12"><a href="#">Цены</a></li>
+          <li class="mr-12"><a href="/license.html">Лицензия</a></li>
+          <li><a href="/contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="/" class="logo">
+        <svg width="164" height="57" viewBox="0 0 164 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M142.38 11.952C142.38 8.32532 143.254 5.55199 145.003 3.63198C146.753 1.66932 149.334 0.687988 152.747 0.687988C156.161 0.687988 158.742 1.66932 160.492 3.63198C162.241 5.55199 163.115 8.32532 163.115 11.952V13.36H156.46V11.504C156.46 9.96799 156.161 8.85865 155.564 8.17599C154.966 7.45065 154.091 7.08799 152.939 7.08799C151.787 7.08799 150.913 7.45065 150.316 8.17599C149.718 8.85865 149.419 9.96799 149.419 11.504C149.419 13.3813 149.91 15.024 150.891 16.432C151.915 17.84 153.43 19.44 155.436 21.232C157.1 22.768 158.443 24.1333 159.467 25.328C160.491 26.48 161.366 27.888 162.092 29.552C162.817 31.216 163.18 33.1147 163.18 35.248C163.18 38.8747 162.284 41.6693 160.492 43.632C158.7 45.552 156.097 46.512 152.684 46.512C149.27 46.512 146.668 45.552 144.876 43.632C143.084 41.6693 142.188 38.8747 142.188 35.248V32.496H148.844V35.696C148.844 38.5973 150.06 40.048 152.492 40.048C154.924 40.048 156.139 38.5973 156.139 35.696C156.139 33.8187 155.628 32.176 154.604 30.768C153.622 29.36 152.129 27.76 150.124 25.968C148.46 24.432 147.116 23.088 146.092 21.936C145.068 20.7413 144.193 19.312 143.467 17.648C142.742 15.984 142.38 14.0853 142.38 11.952Z"
+            fill="black"/>
+          <path
+            d="M131.613 46L130.397 37.872H121.757L120.541 46H114.077L121.245 1.19995H131.549L138.717 46H131.613ZM129.437 31.792L126.045 9.13595L122.653 31.792H129.437Z"
+            fill="black"/>
+          <path d="M113.989 1.19995V7.59995H106.629V46H99.5895V7.59995H92.2295V1.19995H113.989Z" fill="black"/>
+          <path d="M87.8503 1.19995V46H80.8103V1.19995H87.8503Z" fill="black"/>
+          <line class="animline" x1="0" y1="53.5" x2="164" y2="53.5" stroke="#25927F" stroke-width="7px"/>
+          <path
+            d="M68.5003 46C68.2443 45.2746 68.0736 44.592 67.9883 43.952C67.9029 43.312 67.8603 42.16 67.8603 40.496V33.456C67.8603 31.408 67.4976 29.9573 66.7723 29.104C66.0469 28.208 64.8736 27.76 63.2523 27.76H60.8203V46H53.7803V1.19995H64.4043C68.0309 1.19995 70.6763 2.05329 72.3403 3.75995C74.0043 5.42395 74.8363 8.00528 74.8363 11.504V15.024C74.8363 19.632 73.3003 22.6613 70.2283 24.112C71.8923 24.7946 73.0869 25.9466 73.8123 27.568C74.5376 29.1466 74.9003 31.1733 74.9003 33.648V40.56C74.9003 41.84 74.9429 42.8853 75.0283 43.696C75.1136 44.464 75.3269 45.232 75.6683 46H68.5003ZM60.8203 21.36H63.5723C64.9803 21.36 66.0256 20.9973 66.7083 20.272C67.4336 19.5466 67.7963 18.3306 67.7963 16.624V12.208C67.7963 10.5866 67.4976 9.41329 66.9003 8.68795C66.3456 7.96262 65.4496 7.59995 64.2123 7.59995H60.8203V21.36Z"
+            fill="black"/>
+          <path d="M45.6415 20.08V26.48H35.9775V39.6H48.1375V46H28.9375V1.19995H48.1375V7.59995H35.9775V20.08H45.6415Z"
+                fill="black"/>
+          <path
+            d="M17.9078 1.19995H24.3718L17.4598 46H6.96376L0.0517578 1.19995H7.15576L12.5318 37.744L17.9078 1.19995Z"
+            fill="black"/>
+        </svg>
+      </a>
+      <div class="header_contacts d-flex align-items-center">
+        <a href="tel:+79503518686" class="fs-18px mulish-700 mr-5">+7 950 351 86 86</a>
+        <button class="main_button second mr-14 open_modal" data-modal="contacts" >Заказать звонок</button>
+        <div class="d-flex align-items-center">
+          <a href="#" class="mr-2">
+            <img src="img/vb.svg" alt="">
+          </a>
+          <a href="#" class="mr-2">
+            <img src="img/tg.svg" alt="">
+          </a>
+          <a href="#" class="mr-2">
+            <img src="img/wa.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <a href="tel:+79503518686" class="green_button">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.7388 14.4138C18.5716 15.6841 17.9477 16.8502 16.9837 17.6942C16.0196 18.5382 14.7813 19.0024 13.5 19.0001C6.05626 19.0001 8.4831e-06 12.9438 8.4831e-06 5.50005C-0.00228837 4.21876 0.461903 2.98045 1.30588 2.01639C2.14986 1.05234 3.31592 0.428467 4.58626 0.261304C4.9075 0.22208 5.2328 0.2878 5.51362 0.448653C5.79444 0.609506 6.0157 0.856865 6.14438 1.1538L8.12438 5.57412V5.58537C8.2229 5.81267 8.26359 6.06083 8.24281 6.30769C8.22204 6.55455 8.14044 6.79242 8.00532 7.00005C7.98845 7.02537 7.97063 7.0488 7.95188 7.07224L6.00001 9.38599C6.7022 10.8129 8.1947 12.2922 9.64032 12.9963L11.9222 11.0547C11.9446 11.0359 11.9681 11.0184 11.9925 11.0022C12.2 10.8639 12.4387 10.7794 12.687 10.7565C12.9353 10.7336 13.1854 10.7729 13.4147 10.871L13.4269 10.8766L17.8434 12.8557C18.1409 12.9839 18.3889 13.205 18.5503 13.4858C18.7116 13.7667 18.7778 14.0922 18.7388 14.4138Z" fill="white" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="section-1 scroll_section">
+    <div class="container">
+      <div class="slider_wrapper unsckroll">
+        <div class="swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+            <div class="swiper-slide d-flex flex-direction-column justify-content-end">
+              <img src="./img/image1.jpg" alt="">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H33M33 1V33M33 1L1 33" stroke="#E9ECEE" stroke-width="2"/>
+              </svg>
+
+              <p class="text-white noto-sans-600 fs-28px mb-4 slide_title">
+                Декларирование грузов
+              </p>
+              <p class="text-white slide_description fs-20px">
+                поступивших на 1 транспортном средстве для 1 ГТД
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-prev">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.6156 20.8843L24.1156 33.3843C24.2317 33.5005 24.3696 33.5926 24.5214 33.6555C24.6731 33.7183 24.8357 33.7507 25 33.7507C25.1642 33.7507 25.3269 33.7183 25.4786 33.6555C25.6303 33.5926 25.7682 33.5005 25.8844 33.3843C26.0005 33.2682 26.0926 33.1303 26.1555 32.9786C26.2183 32.8268 26.2507 32.6642 26.2507 32.5C26.2507 32.3357 26.2183 32.1731 26.1555 32.0213C26.0926 31.8696 26.0005 31.7317 25.8844 31.6156L14.2672 20L25.8844 8.38434C26.1189 8.14979 26.2507 7.83167 26.2507 7.49996C26.2507 7.16826 26.1189 6.85014 25.8844 6.61559C25.6498 6.38104 25.3317 6.24927 25 6.24927C24.6683 6.24927 24.3502 6.38104 24.1156 6.61559L11.6156 19.1156C11.4994 19.2317 11.4072 19.3695 11.3443 19.5213C11.2814 19.673 11.249 19.8357 11.249 20C11.249 20.1642 11.2814 20.3269 11.3443 20.4786C11.4072 20.6304 11.4994 20.7682 11.6156 20.8843Z"
+              fill="#203D53" fill-opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="swiper-next">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.3844 20.8843L15.8844 33.3843C15.7683 33.5005 15.6304 33.5926 15.4786 33.6555C15.3269 33.7183 15.1643 33.7507 15 33.7507C14.8358 33.7507 14.6731 33.7183 14.5214 33.6555C14.3697 33.5926 14.2318 33.5005 14.1156 33.3843C13.9995 33.2682 13.9074 33.1303 13.8445 32.9786C13.7817 32.8268 13.7493 32.6642 13.7493 32.5C13.7493 32.3357 13.7817 32.1731 13.8445 32.0213C13.9074 31.8696 13.9995 31.7317 14.1156 31.6156L25.7328 20L14.1156 8.38434C13.8811 8.14979 13.7493 7.83167 13.7493 7.49996C13.7493 7.16826 13.8811 6.85014 14.1156 6.61559C14.3502 6.38104 14.6683 6.24927 15 6.24927C15.3317 6.24927 15.6498 6.38104 15.8844 6.61559L28.3844 19.1156C28.5006 19.2317 28.5928 19.3695 28.6557 19.5213C28.7186 19.673 28.751 19.8357 28.751 20C28.751 20.1642 28.7186 20.3269 28.6557 20.4786C28.5928 20.6304 28.5006 20.7682 28.3844 20.8843Z"
+              fill="#203D53" fill-opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-2 scroll_section">
+    <div class="container">
+      <div class="block_info">
+        <div class="block_info__side">
+          <h1 class="main_title mb-16 noto-sans-700 fs-64px">
+            О нас
+          </h1>
+          <p class="block_info__description mulish-500 fs-20px">
+            Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон, какие
+            могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+            чтобы деятельность предприятия была законной, например, чтобы предприятие вовремя выплачивало налоги
+            государству и зарплату сотрудникам, обеспечивало сотрудникам достойные условия труда.
+            <span class="description_cropper"></span>
+          </p>
+          <a href="#" class="block_info__button">
+            Читать подробнее
+            <span class="button_cropper"></span>
+            <span class="arrow">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.62744 1.62744L33.6274 1.62744M33.6274 1.62744L33.6274 33.6274M33.6274 1.62744L1.62744 33.6274"
+                  stroke="white" stroke-width="2"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="block_info__image">
+          <img class="gradient" src="./img/bg.svg" alt="">
+          <img class="anim_image" src="./img/image7.jpg" alt="">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="block_counter mb-160px">
+      <div class="block_counter__item d-flex align-items-end justify-content-center">
+        <p class="text-green noto-sans-700 fs-140px mr-4">2
+          <span class="count_anim">
+            <span>4</span>
+            <span>5</span>
+          </span>
+        </p>
+        <p class="mulish-700 fs-20px text-blue">лет успешной практики</p>
+      </div>
+      <div class="block_counter__item d-flex align-items-end justify-content-center">
+        <p class="text-green noto-sans-700 fs-140px mr-4">2
+          <span class="count_anim">
+            <span>4</span>
+            <span>5</span>
+          </span>
+        </p>
+        <p class="mulish-700 fs-20px text-blue">лет успешной практики</p>
+      </div>
+      <div class="block_counter__item d-flex align-items-end justify-content-center">
+        <p class="text-green noto-sans-700 fs-140px mr-4">2
+          <span class="count_anim">
+            <span>4</span>
+            <span>5</span>
+          </span>
+        </p>
+        <p class="mulish-700 fs-20px text-blue">лет успешной практики</p>
+      </div>
+      <div class="block_counter__item d-flex align-items-end justify-content-center">
+        <p class="text-green noto-sans-700 fs-140px mr-4">2
+          <span class="count_anim">
+            <span>4</span>
+            <span>5</span>
+          </span>
+        </p>
+        <p class="mulish-700 fs-20px text-blue">лет успешной практики</p>
+      </div>
+    </div>
+    <div class="form mb-160px" >
+      <img src="./img/form.png" alt="">
+      <form action="">
+        <h2 class="main_title mb-16 noto-sans-700 fs-64px">
+          свяжитесь с нами
+        </h2>
+        <div class="main_input mb-6">
+          <input type="text" required>
+          <div class="placeholder">
+            Введите имя<span>*</span>
+          </div>
+        </div>
+        <div class="main_input">
+          <input type="text" required>
+          <div class="placeholder">
+            Введите номер телефона<span>*</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between mt-14 form_bottom">
+          <div class="d-flex align-items-center">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="20" height="20" fill="#25927F"/>
+                  <path
+                    d="M16.6185 5.88932L8.28516 14.2227C8.23678 14.2711 8.17934 14.3095 8.11611 14.3357C8.05289 14.3619 7.98511 14.3754 7.91667 14.3754C7.84822 14.3754 7.78045 14.3619 7.71722 14.3357C7.65399 14.3095 7.59655 14.2711 7.54818 14.2227L3.90234 10.5768C3.80461 10.4791 3.74971 10.3465 3.74971 10.2083C3.74971 10.0701 3.80461 9.93757 3.90234 9.83984C4.00007 9.74211 4.13262 9.68721 4.27083 9.68721C4.40904 9.68721 4.54159 9.74211 4.63932 9.83984L7.91667 13.1178L15.8815 5.15234C15.9792 5.05461 16.1118 4.99971 16.25 4.99971C16.3882 4.99971 16.5208 5.05461 16.6185 5.15234C16.7162 5.25007 16.7711 5.38262 16.7711 5.52083C16.7711 5.65904 16.7162 5.79159 16.6185 5.88932Z"
+                    fill="white"/>
+                </svg>
+              </label>
+
+            </div>
+            <p class="mulish-500 fs-16px ml-3">Я даю согласие на обработку персональных данных и соглашаюсь с
+              Политикой конфиденциальности</p>
+          </div>
+          <button class="main_button">
+            отправить
+            <svg class="ml-16" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.9707 1L33.9413 17.9706M33.9413 17.9706L16.9707 34.9411M33.9413 17.9706H0.000140667"
+                    stroke="white" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="news mb-160px">
+      <h2 class="main_title mb-16 noto-sans-700 fs-64px">
+        Новости
+      </h2>
+      <div class="swiper newsSwiper mb-16">
+        <div class="news_card_wrapper swiper-wrapper">
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="swiper-slide news_card">
+            <p class="mulish-500 fs-16px mb-12">19 марта / 24 год</p>
+            <p class="noto-sans-700 fs-36px mb-6">
+              Участие
+              в Международной конференции
+            </p>
+            <p class="mulish-500 fs-16px mb-10">
+              Юрист консультирует людей: разъясняет законы, объясняет, как действовать, чтобы не нарушить закон,
+              какие могут быть правовые последствия у тех или иных решений. Юрист на предприятии следит за тем,
+              чтобы деятельность предприятия
+            </p>
+            <a href="" class="news_card__button">
+              подробнее
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 1M15 1L15 15M15 1L1 15" stroke="#25927F" stroke-width="2"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="d-flex align-items-center justify-content-between news_bottom">
+        <div class="news-swiper-pagination" style="margin-right: 140px;"></div>
+        <a href="#" class="main_button">
+          все новости
+          <svg class="ml-16" width="36" height="36" viewBox="0 0 36 36" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.9707 1L33.9413 17.9706M33.9413 17.9706L16.9707 34.9411M33.9413 17.9706H0.000140667"
+                  stroke="white" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+
+
+    </div>
+    <div class="block_info">
+      <div class="block_info__side">
+        <h1 class="main_title mb-16 noto-sans-700 fs-64px">
+          Работаем<br>
+          по всей россии
+        </h1>
+        <div class="contact_list">
+          <div class="contact_list__item d-flex align-items-start mb-6">
+            <img src="./img/pin.svg" alt="" class="mr-4">
+            <div>
+              <p class="mb-1 mulish-500 fs-16px text-blue">
+                Наш адрес
+              </p>
+              <p class="noto-sans-700 fs-20px">г. Нижний Новгород, пр-т Ленина, д.4, офис 564</p>
+            </div>
+
+
+          </div>
+          <div class="contact_list__item d-flex align-items-start mb-6">
+            <img src="./img/phone.svg" alt="" class="mr-4">
+            <div>
+              <p class="mb-1 mulish-500 fs-16px text-blue">
+                Телефон
+              </p>
+              <a href="tel:+74957305132" class="noto-sans-700 fs-20px">+7 (495) 730 51 32</a>
+            </div>
+          </div>
+          <div class="contact_list__item d-flex align-items-start mb-6">
+            <img src="./img/email.svg" alt="" class="mr-4">
+            <div>
+              <p class="mb-1 mulish-500 fs-16px text-blue">
+                Email
+              </p>
+              <a href="mailto:info@veritas.ru" class="noto-sans-700 fs-20px">info@veritas.ru</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="block_info__button">
+          Читать подробнее
+          <span class="arrow">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.62744 1.62744L33.6274 1.62744M33.6274 1.62744L33.6274 33.6274M33.6274 1.62744L1.62744 33.6274"
+                  stroke="white" stroke-width="2"/>
+              </svg>
+            </span>
+        </a>
+      </div>
+      <div class="block_info__image">
+        <img src="./img/contacts.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer_content">
+      <div class="mulish-500 fs-16px text-blue">
+        © 2024
+        <a href="#" class="text-green main_link">Veritas</a>
+      </div>
+      <div class="d-flex align-items-center center">
+        <a href="#" class="text-blue main_link mr-20">Cookies policy</a>
+        <a href="#" class="text-blue main_link">Политика конфиденциальности</a>
+      </div>
+      <div class="button_up">
+        <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 24.6274L23.6274 2.00002M23.6274 2.00002L46.2548 24.6274M23.6274 2.00002V47.2549" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal modal_theme_normal" data-modal="contacts">
+  <div class="modal__content">
+    <div class="modal_close">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25.7074 24.2926C25.8004 24.3855 25.8741 24.4958 25.9243 24.6172C25.9746 24.7386 26.0005 24.8687 26.0005 25.0001C26.0005 25.1315 25.9746 25.2616 25.9243 25.383C25.8741 25.5044 25.8004 25.6147 25.7074 25.7076C25.6145 25.8005 25.5042 25.8742 25.3828 25.9245C25.2614 25.9747 25.1313 26.0006 24.9999 26.0006C24.8686 26.0006 24.7384 25.9747 24.6171 25.9245C24.4957 25.8742 24.3854 25.8005 24.2924 25.7076L15.9999 17.4138L7.70745 25.7076C7.5198 25.8952 7.26531 26.0006 6.99995 26.0006C6.73458 26.0006 6.48009 25.8952 6.29245 25.7076C6.1048 25.5199 5.99939 25.2654 5.99939 25.0001C5.99939 24.7347 6.10481 24.4802 6.29245 24.2926L14.5862 16.0001L6.29245 7.70757C6.1048 7.51993 5.99939 7.26543 5.99939 7.00007C5.99939 6.7347 6.1048 6.48021 6.29245 6.29257C6.48009 6.10493 6.73458 5.99951 6.99995 5.99951C7.26531 5.99951 7.5198 6.10493 7.70745 6.29257L15.9999 14.5863L24.2924 6.29257C24.4801 6.10493 24.7346 5.99951 24.9999 5.99951C25.2653 5.99951 25.5198 6.10493 25.7074 6.29257C25.8951 6.48021 26.0005 6.7347 26.0005 7.00007C26.0005 7.26543 25.8951 7.51993 25.7074 7.70757L17.4137 16.0001L25.7074 24.2926Z" fill="black" />
+      </svg>
+    </div>
+    <div class="form">
+      <form action="">
+        <h2 class="main_title mb-16 noto-sans-700 fs-64px">
+          свяжитесь с нами
+        </h2>
+        <div class="main_input mb-6">
+          <input type="text" required>
+          <div class="placeholder">
+            Введите имя<span>*</span>
+          </div>
+        </div>
+        <div class="main_input">
+          <input type="text" required>
+          <div class="placeholder">
+            Введите номер телефона<span>*</span>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between mt-14 form_bottom">
+          <div class="d-flex align-items-center">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="20" height="20" fill="#25927F"/>
+                  <path
+                    d="M16.6185 5.88932L8.28516 14.2227C8.23678 14.2711 8.17934 14.3095 8.11611 14.3357C8.05289 14.3619 7.98511 14.3754 7.91667 14.3754C7.84822 14.3754 7.78045 14.3619 7.71722 14.3357C7.65399 14.3095 7.59655 14.2711 7.54818 14.2227L3.90234 10.5768C3.80461 10.4791 3.74971 10.3465 3.74971 10.2083C3.74971 10.0701 3.80461 9.93757 3.90234 9.83984C4.00007 9.74211 4.13262 9.68721 4.27083 9.68721C4.40904 9.68721 4.54159 9.74211 4.63932 9.83984L7.91667 13.1178L15.8815 5.15234C15.9792 5.05461 16.1118 4.99971 16.25 4.99971C16.3882 4.99971 16.5208 5.05461 16.6185 5.15234C16.7162 5.25007 16.7711 5.38262 16.7711 5.52083C16.7711 5.65904 16.7162 5.79159 16.6185 5.88932Z"
+                    fill="white"/>
+                </svg>
+              </label>
+
+            </div>
+            <p class="mulish-500 fs-16px ml-3">Я даю согласие на обработку персональных данных и соглашаюсь с
+              Политикой конфиденциальности</p>
+          </div>
+          <button class="main_button">
+            отправить
+            <svg class="ml-16" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.9707 1L33.9413 17.9706M33.9413 17.9706L16.9707 34.9411M33.9413 17.9706H0.000140667"
+                    stroke="white" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+
+
+
+<div class="loader d-flex align-items-center justify-content-center">
+  <svg width="368" height="25" viewBox="0 0 368 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="368" height="25" fill="#E9ECEE" />
+      <rect x="0" y="0" width="0" height="25" fill="#25927F" class="loader_line"/>
+  </svg>
+</div>
+
+<script src="./js/index.bundle.js"></script>
+
+</body>
+</html>
